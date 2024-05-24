@@ -1,0 +1,22 @@
+This SQL code retrieves revenue and movie counts for each genre using a common table expression (CTE) for calculations. It joins multiple tables to gather genre, film, inventory, rental, and payment data. The results are ordered by total revenue, providing insights into genre performance.
+
+WITH genre_revenue AS					
+	(SELECT   F.category_id,				
+		    F.name AS genre,			
+		    SUM(A.amount) AS total_revenue,			
+	 	    COUNT(E.category_id) AS number_of_movies			
+	 FROM category F				
+	 JOIN film_category E ON F.category_id = E.category_id				
+	 JOIN film D ON E.film_id = D.film_id				
+	 JOIN inventory C ON D.film_id = C.film_id				
+	 JOIN rental B ON C.inventory_id = B.inventory_id				
+	 JOIN payment A ON B.rental_id = A.rental_id				
+	 GROUP BY F.category_id,				
+		        F.name)			
+					
+SELECT genre,					
+	   total_revenue,				
+	   number_of_movies				
+FROM genre_revenue					
+ORDER BY total_revenue DESC;					
+
