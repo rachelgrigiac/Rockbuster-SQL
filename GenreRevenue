@@ -1,4 +1,4 @@
-This SQL code retrieves revenue and movie counts for each genre using a common table expression (CTE) for calculations. It joins multiple tables to gather genre, film, inventory, rental, and payment data. The results are ordered by total revenue, providing insights into genre performance.
+--This SQL code retrieves revenue and movie counts for each genre using a common table expression (CTE) for calculations. It joins multiple tables to gather genre, film, inventory, rental, and payment data. The results are ordered by total revenue, providing insights into genre performance.
 
 WITH genre_revenue AS					
 	(SELECT   F.category_id,				
