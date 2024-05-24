@@ -1,4 +1,4 @@
-This SQL code identifies high lifetime value customers by calculating the total amount paid and the number of rentals for each customers. It joins payment, customer, address city, and country tables, and then orders the results by total amount paid in descending order, limiting the output to the top 10 customers. 
+--This SQL code identifies high lifetime value customers by calculating the total amount paid and the number of rentals for each customers. It joins payment, customer, address city, and country tables, and then orders the results by total amount paid in descending order, limiting the output to the top 10 customers. 
 
 SELECT B.customer_id,				
 	   B.first_name,			
