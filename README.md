@@ -20,3 +20,7 @@ main questions they’d like to answer:
 - Which countries are Rockbuster customers based in?
 - Where are customers with a high lifetime value based?
 - Do sales figures vary between geographic regions?
+
+#### Data
+
+The analysis was conducted using the Rockbuster relational database management system and PostgreSQL. The dataset contains information about Rockbuster's movies, customers, payments, stores, staff, actors, rental history, and addresses.
