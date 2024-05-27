@@ -24,3 +24,6 @@ main questions they’d like to answer:
 #### Data
 
 The analysis was conducted using the Rockbuster relational database management system and PostgreSQL. The dataset contains information about Rockbuster's movies, customers, payments, stores, staff, actors, rental history, and addresses.
+
+
+[Final Report](Presentation_Rockbuster.pdf)
